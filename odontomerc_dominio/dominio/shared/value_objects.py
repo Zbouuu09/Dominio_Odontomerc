@@ -9,11 +9,7 @@ class ValorInvalidoError(ValueError):
 
 @dataclass(frozen=True)
 class NombreCompleto:
-    """
-    Nombre y apellido de una persona (Cliente o Doctor).
-    Regla de negocio (cliente_servicio.py / doctor_servicio.py):
-    nombre y apellido son obligatorios.
-    """
+
     nombre: str
     apellido: str
 
@@ -29,10 +25,7 @@ class NombreCompleto:
 
 @dataclass(frozen=True)
 class Telefono:
-    """
-    Regla de negocio (cliente_servicio.py):
-    el teléfono no puede superar los 9 caracteres.
-    """
+
     numero: str
 
     def __post_init__(self):
