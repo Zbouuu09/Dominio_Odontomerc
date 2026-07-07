@@ -16,7 +16,7 @@ class ServicioId:
 
 @dataclass
 class ServicioOdontologico:
-    """Aggregate Root del agregado ServicioOdontologico."""
+
     id: ServicioId
     nombre: str
     descripcion: str
