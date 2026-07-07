@@ -62,5 +62,5 @@ class Cita:
         )
 
     def cerrar(self, conclusion: str) -> None:
-        """Registra la conclusión de la cita (invariante validada por Conclusion)."""
+
         self.conclusion = Conclusion(conclusion)
