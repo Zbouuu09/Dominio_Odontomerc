@@ -1,14 +1,3 @@
-"""
-dominio/cliente/expediente.py
-
-Entidad: Expediente
-Pertenece al agregado Cliente (no es un Aggregate Root).
-
-Extraído de la regla de negocio en cliente_servicio.registrar_cliente:
-"un cliente tiene un expediente", el cual se crea automáticamente al
-registrar al cliente. Al vivir dentro del límite del agregado Cliente,
-Expediente solo debe modificarse a través de la raíz Cliente.
-"""
 
 from __future__ import annotations
 from dataclasses import dataclass
@@ -27,7 +16,7 @@ class ExpedienteId:
 
 @dataclass
 class Expediente:
-    """Entidad interna del agregado Cliente."""
+
     id: ExpedienteId
     descripcion: str
     fecha_creacion: str
